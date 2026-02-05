@@ -1,0 +1,115 @@
+/* ====================
+   联系我们页样式 - contact.css
+   ==================== */
+
+.contact-section {
+    background: white;
+    padding: 80px 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.contact-intro {
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.form-title {
+    margin-bottom: 25px;
+    color: var(--text-dark);
+}
+
+/* 地图区域 */
+.map-section {
+    background: var(--bg-light);
+    padding: 80px 0;
+}
+
+.map-placeholder {
+    background: var(--gradient-1);
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.map-content {
+    text-align: center;
+}
+
+.map-content i {
+    font-size: 60px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.map-content p {
+    font-size: 20px;
+}
+
+.map-content p:last-child {
+    opacity: 0.7;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* 常见问题 */
+.faq-section {
+    background: white;
+    padding: 80px 0;
+}
+
+.faq-grid {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.faq-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.faq-item h4 i {
+    margin-right: 10px;
+}
+
+.faq-item p {
+    color: var(--text-light);
+    padding-left: 30px;
+}
+
+/* 响应式 */
+@media (max-width: 1024px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-placeholder {
+        height: 300px;
+    }
+
+    .faq-item p {
+        padding-left: 0;
+    }
+}
